@@ -1,6 +1,6 @@
 {
   "name": "cors-proxy-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple CORS proxy server",
   "main": "index.js",
   "preferGlobal": true,
