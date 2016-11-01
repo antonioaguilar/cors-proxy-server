@@ -1,0 +1,28 @@
+{
+  "name": "cors-proxy-server",
+  "version": "1.0.0",
+  "description": "Simple CORS proxy server",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "cors-proxy-server": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonioaguilar/cors-proxy-server.git"
+  },
+  "author": "Antonio Aguilar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antonioaguilar/cors-proxy-server/issues"
+  },
+  "homepage": "https://github.com/antonioaguilar/cors-proxy-server#readme",
+  "dependencies": {
+    "http-proxy": "^1.15.2",
+    "proxy-from-env": "^0.1.1"
+  }
+}

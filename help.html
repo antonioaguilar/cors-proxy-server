@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proxy Server</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: lightyellow;
+    }
+
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <h3>Proxy Server Usage</h3>
+  <ul>
+    <li><a href="/">/</a> Shows help</li>
+    <li><a href="/iscorsneeded">/iscorsneeded</a> This is the only resource on this host which is served without CORS headers.</li>
+    <li><a href="/url">/url</a> Create a request to url, and includes CORS headers in the response.</li>
+  </ul>
+
+  <p>If the protocol is omitted, it defaults to http (https if port 443 is specified).</p>
+  <p>Cookies are disabled and stripped from requests.</p>
+
+  <p>
+    Redirects are automatically followed. For debugging purposes, each followed redirect results in the addition of a X-CORS-Redirect-n header, where n starts at 1. These headers are not accessible by the XMLHttpRequest API.
+  </p>
+
+  <p>
+    After 5 redirects, redirects are not followed any more. The redirect response is sent back to the browser, which can choose to follow the redirect (handled automatically by the browser).
+  </p>
+
+  <p>
+    The requested URL is available in the X-Request-URL response header. The final URL, after following all redirects, is available in the X-Final-URL response header.
+  </p>
+
+  <p>
+    To prevent the use of the proxy for casual browsing, the API requires either the Origin or the X-Requested-With header to be set. To avoid unnecessary preflight (OPTIONS) requests, it's recommended to not manually set these headers in your code.
+  </p>
+
+</div>
+
+</body>
+</html>
